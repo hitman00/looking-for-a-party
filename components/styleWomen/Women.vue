@@ -144,11 +144,11 @@ left: 34%;
 
 .image{
     position: relative;
-    margin-top: -25%;
+    margin: -25% 12%;
     &:before{
         display: block;
         content: '';
-        padding-bottom: 100%;
+        padding-bottom: 130%;
     }
     img{
         position: absolute;
@@ -157,7 +157,6 @@ left: 34%;
         left: 0;
         right: 0;
         width: 100%;
-        height: 100%;
     }
 }
 
