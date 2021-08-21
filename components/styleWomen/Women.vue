@@ -4,7 +4,9 @@
       <div :class="$style.image">
         <img src="@/assets/imgs/women.png">
       </div>
-      <img :class="$style.year" src="@/assets/imgs/20214.png">
+      <div :class="$style.year_text">
+        2021
+      </div>
       <div :class="$style.text">
         FREE TICKET EVENT
       </div>
@@ -13,18 +15,18 @@
       <div :class="$style.image">
         <img src="@/assets/imgs/men6.png">
       </div>
-      <div :class="$style.text2">
-        PARTY ROCK <span>FREE TICKET EVENT</span>
+      <div :class="$style.text">
+        <span>PARTY ROCK </span>FREE TICKET EVENT
       </div>
       <a href="#">
         RIGESTER
       </a>
     </div>
-    <div :class="[$style.boxs , $style.bc]">
+    <div :class="[$style.boxs , $style.box_3]">
       <div :class="$style.cycle" />
       <div :class="$style.cycle2" />
       <p>Upcoming Event <br><span>150+</span></p>
-      <div :class="$style.bct">
+      <div :class="$style.btm">
         View More Event
       </div>
     </div>
@@ -38,8 +40,8 @@ export default {
 </script>
 
 <style lang="scss" module>
+
 .main{
-    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 10%;
@@ -51,7 +53,7 @@ export default {
     border-radius: 20px;
 
     a{
-      margin: 35% 14% 0;
+      margin: 12% 14% 0;
       display: block;
       cursor: pointer;
       color: #000;
@@ -62,11 +64,16 @@ export default {
 }
 }
 
-.year{
- position: relative;
- margin: -14% auto;
- display: block;
- width: 55.5%;
+.year_text{
+position: relative;
+color: #1b2635;
+text-shadow: 8px 0px 2px #27ffe6;
+font-size: 82px;
+text-align: center;
+font-family: Sanchez;
+margin-top: 6%;
+font-weight: 600;
+letter-spacing: 4px;
 }
 
 .text{
@@ -75,24 +82,20 @@ export default {
   text-align: center;
   margin-top: 18%;
   font-weight: 200;
-}
-
-.text2{
-font-size: 69px;
+  span{
+  font-size: 69px;
 font-weight: bold;
 font-family: Corbel;
 position: relative;
 line-height: 0.8;
-margin: -28.5% 15%;
-    span{
-        font-size: 15px;
-        font-weight: 200;
-        display: block;
-        line-height: 3;
-    }
+margin: -46.5% 15% 0;
+display: block;
+padding-bottom: 7%;
+text-align: left;
+  }
 }
 
-.bc{
+.box_3{
     background: #27ffe6;
     position: relative;
     overflow: hidden;
@@ -106,7 +109,7 @@ margin: -28.5% 15%;
     }
 }
 
-.bct{
+.btm{
   position: relative;
 background: #1d2635;
 color: #27ffe6;
@@ -121,6 +124,7 @@ text-align: center;
     opacity: 0.9;
   }
 }
+
 .cycle{
  position: absolute;
 width: 45%;
@@ -131,6 +135,7 @@ opacity: 0.4;
 top: 23%;
 left: 51%;
 }
+
 .cycle2{
  position: absolute;
 width: 80%;
@@ -159,12 +164,22 @@ left: 34%;
         width: 100%;
     }
 }
+@media(max-width: 1215px){
+  .year_text{
+      font-size: 60px;
+
+  }
+    .text span{
+  font-size: 56px;
+}
+}
 
 @media(max-width: 1000px){
-  .text2{
+  .text span{
   font-size: 45px;
 }
-.bct{
+
+.btm{
   margin: 29% 20% 10% 12%;
 }
 }
@@ -173,6 +188,7 @@ left: 34%;
   .main{
     flex-direction: column;
   }
+
 .boxs{
 width: 80%;
 margin: 11% auto;
@@ -182,17 +198,34 @@ margin: 11% auto;
 width: 80%;
 margin: -25% auto 0;
 }
+.year_text{
+  font-size: 86px;
+  margin-top: -19%;
+}
 .text{
 padding-bottom: 10%;
+margin-top: 6%;
+span{
+font-size: 70px;
+margin: -28.5% 21% 0;
 }
-.text2{
-  font-size: 55px;
-  margin: -18.5% 21%;
 }
+
 .boxs{
   a{
-    margin: 28% 14% 10%;
+    margin: 7% 14% 10%;
   }
+}
+}
+
+@media(max-width: 500px){
+.year_text{
+  font-size: 53px;
+margin-top: -17%;
+}
+
+.text span{
+  font-size: 45px;
 }
 }
 </style>

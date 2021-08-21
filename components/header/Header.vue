@@ -31,7 +31,6 @@ export default {
 
 <style lang="scss" module>
 .main{
-    width: 100%;
     display: flex;
     padding-top: 4.5%;
 

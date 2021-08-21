@@ -22,10 +22,19 @@ body{
 a{
   text-decoration: none;
 }
- @font-face {
+
+@font-face {
     font-family: 'Righteous';
     font-style: normal;
     font-weight: normal;
     src: url('@/assets/fonts/font/Righteous.woff') format('woff');
     }
+
+@font-face {
+    font-family: 'Sanchez';
+    font-style: normal;
+    font-weight: normal;
+    src:  url('@/assets/fonts/font/Sanchez-Regular.woff') format('woff');
+    }
+
 </style>

@@ -33,22 +33,26 @@
 export default {
 
 }
+
 </script>
+
 <style lang="scss" module>
 
 .main{
-  width: 100%;
   display: flex;
   margin-top: 6.2%;
 }
+
 .boxs{
     width: 50%;
 }
+
 .title{
     color: #fff;
     font-size: 120px;
     font-weight: bold;
 }
+
 .description{
   color: #fff;
   width: 76%;
