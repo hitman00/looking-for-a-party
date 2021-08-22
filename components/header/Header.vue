@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.main">
+  <div :class="$style.header_main">
     <div :class="$style.profile">
       <div :class="$style.avatar">
         YP
@@ -8,7 +8,7 @@
         Yu party
       </div>
     </div>
-    <div :class="$style.pages">
+    <div :class="$style.meno">
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Contact Us</a>
@@ -19,6 +19,7 @@
     </div>
     <div :class="$style.registry">
       REGISTER
+      <img src="@/assets/imgs/right_arrow_green.png">
     </div>
   </div>
 </template>
@@ -30,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" module>
-.main{
+.header_main{
     display: flex;
     padding-top: 4.5%;
 
@@ -64,7 +65,7 @@ export default {
 
 }
 
-.pages{
+.meno{
     width:60% ;
     display: flex;
     padding: 0 10%;
@@ -105,10 +106,13 @@ transition: all 0.3s ease;
     &:hover{
       opacity: 0.8;
     }
+    img{
+      padding-left: 5%;
+    }
 }
 
 @media(max-width: 800px){
-.pages{
+.meno{
    display: none;
 }
 .registry{
@@ -118,7 +122,7 @@ transition: all 0.3s ease;
 .icon_page{
   display: flex;
 }
-.main{
+.header_main{
   justify-content: space-between;
 }
 .profile{
