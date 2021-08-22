@@ -2,20 +2,20 @@
   <div :class="$style.main">
     <div :class="$style.box">
       <Header />
-      <Iphone />
-      <Women />
+      <Slider />
+      <Cards />
     </div>
   </div>
 </template>
 <script>
 import Header from '@/components/header/Header.vue'
-import Iphone from '@/components/iphone/Iphone.vue'
-import Women from '@/components/styleWomen/Women.vue'
+import Slider from '@/components/Slider/Slider.vue'
+import Cards from '@/components/Cards/Cards.vue'
 export default {
   components: {
     Header,
-    Iphone,
-    Women
+    Slider,
+    Cards
   }
 }
 </script>

@@ -1,7 +1,8 @@
 <template>
-  <div :class="$style.main">
-    <div :class="$style.boxs">
-      <div :class="$style.image">
+  <div :class="$style.cards_main">
+    <div :class="$style.cards_box">
+      <img :class="$style.three_arrow" src="@/assets/imgs/icon.png">
+      <div :class="$style.cards_image">
         <img src="@/assets/imgs/women.png">
       </div>
       <div :class="$style.year_text">
@@ -11,8 +12,9 @@
         FREE TICKET EVENT
       </div>
     </div>
-    <div :class="$style.boxs">
-      <div :class="$style.image">
+    <div :class="$style.cards_box">
+      <img :class="$style.three_arrow2" src="@/assets/imgs/icon.png">
+      <div :class="$style.cards_image">
         <img src="@/assets/imgs/men6.png">
       </div>
       <div :class="$style.text">
@@ -20,13 +22,14 @@
       </div>
       <a href="#">
         RIGESTER
+        <img src="@/assets/imgs/right_arrow_black.png">
       </a>
     </div>
-    <div :class="[$style.boxs , $style.box_3]">
+    <div :class="[$style.cards_box , $style.box_3]">
       <div :class="$style.cycle" />
       <div :class="$style.cycle2" />
       <p>Upcoming Event <br><span>150+</span></p>
-      <div :class="$style.btm">
+      <div :class="$style.btn">
         View More Event
       </div>
     </div>
@@ -41,16 +44,17 @@ export default {
 
 <style lang="scss" module>
 
-.main{
+.cards_main{
     display: flex;
     justify-content: space-between;
     padding-bottom: 10%;
 }
 
-.boxs{
+.cards_box{
     width: 30%;
     background: #fff;
     border-radius: 20px;
+    position: relative;
 
     a{
       margin: 12% 14% 0;
@@ -60,6 +64,9 @@ export default {
       transition: all 0.3s ease;
         &:hover{
           opacity: 0.7;
+  }
+  img{
+    padding-left: 2%;
   }
 }
 }
@@ -74,6 +81,7 @@ font-family: Sanchez;
 margin-top: 6%;
 font-weight: 600;
 letter-spacing: 4px;
+z-index: 1;
 }
 
 .text{
@@ -109,7 +117,7 @@ text-align: left;
     }
 }
 
-.btm{
+.btn{
   position: relative;
 background: #1d2635;
 color: #27ffe6;
@@ -123,6 +131,21 @@ text-align: center;
   &:hover{
     opacity: 0.9;
   }
+}
+
+.three_arrow{
+position: absolute;
+top: 13%;
+left: -25%;
+z-index: 1;
+width: 48%;
+}
+
+.three_arrow2{
+position: absolute;
+bottom: 98%;
+right: 4%;
+width: 46%;
 }
 
 .cycle{
@@ -147,7 +170,7 @@ top: 50%;
 left: 34%;
 }
 
-.image{
+.cards_image{
     position: relative;
     margin: -25% 12%;
     &:before{
@@ -179,22 +202,22 @@ left: 34%;
   font-size: 45px;
 }
 
-.btm{
+.btn{
   margin: 29% 20% 10% 12%;
 }
 }
 
 @media(max-width: 800px){
-  .main{
+  .cards_main{
     flex-direction: column;
   }
 
-.boxs{
+.cards_box{
 width: 80%;
 margin: 11% auto;
 }
 
-.image{
+.cards_image{
 width: 80%;
 margin: -25% auto 0;
 }
@@ -211,7 +234,11 @@ margin: -28.5% 21% 0;
 }
 }
 
-.boxs{
+.three_arrow2{
+  bottom: 68%;
+}
+
+.cards_box{
   a{
     margin: 7% 14% 10%;
   }

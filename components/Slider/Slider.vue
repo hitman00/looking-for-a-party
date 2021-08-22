@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.main">
+  <div :class="$style.slider_main">
     <div :class="$style.boxs">
       <div :class="$style.title">
         Looking for a party ?
@@ -16,8 +16,17 @@
       </div>
     </div>
     <div :class="$style.boxs">
-      <div :class="$style.image">
-        <img src="@/assets/imgs/iphone.png">
+      <div :class="$style.iphone_image">
+        <img src="@/assets/imgs/iphone11.png">
+      </div>
+      <div :class="$style.download_app">
+        <svg style="position: absolute" viewBox="0 0 120 140">
+          <circle id="MyPath" cx="60" cy="60" r="45" fill="none" />
+
+          <text fill="#FFFFFf"><textPath href="#MyPath">DOWNLOAD THE APP</textPath></text>
+
+        </svg>
+        <img src="@/assets/imgs/down_arrow_white.png">
       </div>
     </div>
     <div :class="$style.search_box2">
@@ -31,20 +40,21 @@
 <script>
 
 export default {
+  name: 'Iphone'
 
 }
-
 </script>
 
 <style lang="scss" module>
 
-.main{
+.slider_main{
   display: flex;
   margin-top: 6.2%;
 }
 
 .boxs{
     width: 50%;
+    position: relative;
 }
 
 .title{
@@ -62,7 +72,8 @@ export default {
   margin-bottom: 10%;
 }
 
-.image{
+.iphone_image{
+  width: 110%;
   position: relative;
   &:before{
     display: block;
@@ -95,6 +106,29 @@ export default {
   }
   img{
     padding: 0 6% 0 8%;
+  }
+}
+
+.download_app{
+  position: absolute;
+  right: 14%;
+bottom: 13%;
+  width: 200px;
+  height: 200px;
+  opacity: 0.7;
+  background: #000;
+  color:#fff;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+    opacity: 0.8;
+  }
+  img{
+    margin: 37% auto 0;
+display: block;
   }
 }
 
@@ -135,6 +169,9 @@ export default {
         width: 48%;
 
   }
+
+.iphone_image{
+width: 130%;}
 }
 
 @media(max-width: 1000px){
@@ -152,6 +189,10 @@ export default {
         width: 46%;
 
   }
+
+  .download_app{
+    display: none;
+  }
 }
 
 @media(max-width: 800px){
@@ -159,7 +200,7 @@ export default {
     width: 100%;
 }
 
-.main{
+.slider_main{
 flex-direction: column;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -174,8 +215,8 @@ flex-direction: column;
   display: none;
 }
 
-.image{
-width: 70%;
+.iphone_image{
+width: 100%;
 margin: 0 auto;
 }
 
@@ -183,7 +224,7 @@ margin: 0 auto;
   display: flex;
 }
 
-.image{
+.iphone_image{
   img{
     height: 100%;
   }
