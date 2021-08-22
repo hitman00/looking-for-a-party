@@ -24,6 +24,7 @@
     width: 100%;
     font-family: 'Righteous';
   }
+
   .box {
     max-width: 1235px;
     margin: 0 auto;

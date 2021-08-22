@@ -12,12 +12,14 @@
     margin: 0;
     padding: 0;
   }
+
   body {
     background-image: url('~/assets/imgs/background55.png');
     background-color: #1d2635;
     background-position: right top;
     background-repeat: no-repeat;
   }
+
   a {
     text-decoration: none;
   }
