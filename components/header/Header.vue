@@ -14,7 +14,8 @@
       <img src="@/assets/imgs/meno_icon.png" />
     </div>
     <div :class="$style.registry">
-      REGISTER
+      <a href="#">
+      REGISTER</a>
       <img src="@/assets/imgs/right_arrow_green.png" />
     </div>
   </div>
@@ -92,12 +93,14 @@
     align-items: center;
     justify-content: end;
     width: 20%;
+    a{
     color: #3cefdb;
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
       opacity: 0.8;
-    }
+    }}
+    
     img {
       padding-left: 5%;
     }

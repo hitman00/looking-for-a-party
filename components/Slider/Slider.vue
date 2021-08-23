@@ -17,7 +17,7 @@
         <img src="@/assets/imgs/iphone11.png" />
       </div>
       <div :class="$style.download_app">
-        <svg style="position: absolute" viewBox="0 0 120 140">
+        <svg viewBox="0 0 120 120">
           <circle id="MyPath" cx="60" cy="60" r="45" fill="none" />
 
           <text fill="#FFFFFf">
@@ -95,10 +95,16 @@
       background: none;
       color: #fff;
       border: none;
-      width: 53%;
+      align-self: normal;
+      flex-grow: 1;
     }
     img {
       padding: 0 6% 0 8%;
+      transition: all 0.3s ease;
+    }
+    &:hover img {
+      transform: rotate(90deg) scale(1.2);
+      padding-left: 8%;
     }
   }
 
@@ -119,9 +125,20 @@
     &:hover {
       opacity: 0.8;
     }
+    svg {
+      position: absolute;
+      transition: all 0.5s ease;
+    }
+    &:hover svg {
+      transform: rotate(360deg);
+    }
     img {
       margin: 37% auto 0;
       display: block;
+      transition: all 0.5s ease;
+    }
+    &:hover img {
+      transform: rotate(-180deg);
     }
   }
 
@@ -157,10 +174,6 @@
     }
   }
   @media (max-width: 1215px) {
-    .search_box input {
-      width: 48%;
-    }
-
     .iphone_image {
       width: 130%;
     }
@@ -171,13 +184,12 @@
       font-size: 90px;
     }
 
-    .description,
-    .find_box {
+    .description {
       font-size: 13px;
     }
 
-    .search_box input {
-      width: 46%;
+    .find_box {
+      font-size: 10px;
     }
 
     .download_app {
@@ -215,9 +227,7 @@
     }
 
     .iphone_image {
-      img {
-        height: 100%;
-      }
+      z-index: -1;
     }
   }
 </style>

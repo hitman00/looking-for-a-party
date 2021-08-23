@@ -18,6 +18,7 @@
     background-color: #1d2635;
     background-position: right top;
     background-repeat: no-repeat;
+    overflow-x: hidden;
   }
 
   a {
