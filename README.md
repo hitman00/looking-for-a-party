@@ -17,7 +17,7 @@ I try to implement this concept design for web.
 
 This repository is licensed under the [GPL-3.0](https://opensource.org/licenses/GPL-3.0).
 
-## Contact
+## Contact Us
 
-- E-mail: <arshen@outlook.com><br>
-- Telegram: [@Arshen](https://telegram.me/Arshen)
+- E-mail: <mrezaee79@gmail.com.com><br>
+- Telegram: [@Hitman](https://telegram.me/hitman0012)
