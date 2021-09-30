@@ -1,6 +1,7 @@
 # Looking for a party Landing page
 
 I try to implement this concept design for web.
+
 ![Image](https://github.com/hitman00/looking-for-a-party/blob/master/assets/imgs/party.PNG)
 
 ## Link
