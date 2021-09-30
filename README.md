@@ -7,7 +7,10 @@ I try to implement this concept design for web.
 - [Demo](https://hitman00.github.io/looking-for-a-party/)
 - Concept page: [Dribbble page](https://dribbble.com/shots/16239180-Event-Party-Web-Design)
 - Images: [Google](https://google.com) - [Dribbble](https://dribbble.com/)
-- ![Image](https://github.com/hitman00/looking-for-a-party/blob/master/assets/imgs/background55.png)
+
+## Images
+
+ ![Image](https://github.com/hitman00/looking-for-a-party/blob/master/assets/imgs/party.PNG)
 
 ## Technologies
 
