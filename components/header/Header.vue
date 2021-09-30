@@ -14,8 +14,7 @@
       <img src="@/assets/imgs/meno_icon.png" />
     </div>
     <div :class="$style.registry">
-      <a href="#">
-      REGISTER</a>
+      <a href="https://hitman00.github.io/looking-for-a-party/">GITHUB</a>
       <img src="@/assets/imgs/right_arrow_green.png" />
     </div>
   </div>
@@ -93,14 +92,15 @@
     align-items: center;
     justify-content: end;
     width: 20%;
-    a{
-    color: #3cefdb;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    &:hover {
-      opacity: 0.8;
-    }}
-    
+    a {
+      color: #3cefdb;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
     img {
       padding-left: 5%;
     }
